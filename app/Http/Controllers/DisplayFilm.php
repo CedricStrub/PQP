@@ -35,6 +35,8 @@ class DisplayFilm extends Controller
     
         $film = $response->json();
 
+        // dd($film);
+
         return view('detailFilm',[
             'film' => $film
         ]);
