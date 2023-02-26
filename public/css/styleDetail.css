@@ -27,6 +27,7 @@
     position: absolute;
     overflow: hidden;
     z-index: -1;
+    filter: grayscale(75%) blur(5px);
 }
 
 .title{
@@ -35,6 +36,7 @@
     text-align: center;
     font-size: 60px;
     letter-spacing: 5px;
+    font-weight: 600;
 }
 
 .container{

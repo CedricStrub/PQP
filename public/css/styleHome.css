@@ -25,7 +25,7 @@
     position: absolute;
     overflow: hidden;
     z-index: -1;
-    filter: grayscale(75%);
+    filter: grayscale(75%) blur(5px);
 }
 
 .bg img{
