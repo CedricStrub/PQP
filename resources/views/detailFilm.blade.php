@@ -16,7 +16,7 @@
             <div class="txt">{{ $film['runtime'] }} min</div>
             <div class="cat">Release Date :</div>
             <div class="txt">{{ $film['release_date'] }}</div>
-            <div class="cat">Synopsis :</div>
+            <div class="cat">Overview :</div>
             <div class="txt">{{ $film['overview'] }}</div>
         </div>
     </div>

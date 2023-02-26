@@ -11,7 +11,7 @@
 </nav>
 <div class="ctn-carte">
     @foreach($films as $film)
-    <a href="/film/{{ $film['id'] }}">
+    <a href="/film/{{ $film['o_id'] }}">
         <div class='carte'>
         <img src="https://image.tmdb.org/t/p/w500{{$film['poster_path']}}"></img>
             <div class="txt">{{ $film['title'] }}</div> 
