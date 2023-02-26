@@ -15,19 +15,19 @@ class DisplayFilm extends Controller
     }
 
     public function index(){
-
+        //definis les variables requise par l'api
         $type = 'movie';
         $time = 'day';
-
+        //récupère les films en tendeances
         $films = $this->api->getTrending($type,$time);
-
+        
         return view('home',[
             'films' => $films
         ]);
     }
 
     public function show($id){
-
+        //récupère les details d'un film
         $film = $this->api->getDetail($id); 
 
         return view('detailFilm',[
