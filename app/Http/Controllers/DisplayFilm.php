@@ -21,7 +21,7 @@ class DisplayFilm extends Controller
         ])->get($this->urlApi.'/trending/'.$type.'/'.$time);
     
         $films = $response->json()['results'];
-    
+
         return view('home',[
             'films' => $films
         ]);
