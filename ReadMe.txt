@@ -15,3 +15,5 @@ Pour lancer l'application il faut
     -php artisan serve
 
 4) Le projet est opérationnel .
+
+5) Vous pouvez crée un compte je n'ai bloquer aucune fonctionalité derrière un role specifique

@@ -22,11 +22,6 @@ use Laravel\Jetstream\Jetstream;
             <div class="txt">{{ $film['release_date'] }}</div>
             <div class="cat">Overview :</div>
             <div class="txt">{{ $film['overview'] }}</div>
-            @can('update', $user)
-            <div class="txt">edit</div>
-            @else
-            <div class="txt">no edit</div>
-            @endcan
         </div>
     </div>
 </div>
