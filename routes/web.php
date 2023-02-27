@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FormController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,6 +21,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [\App\Http\Controllers\DisplayFilm::class,'index']);
 
 Route::get('/film/{id}', [\App\Http\Controllers\DisplayFilm::class,'show']);
+
+Route::get('/dashboard/{id}', [\App\Http\Controllers\DisplayFilm::class,'modify']);
+
+Route::post('/', [FormController::class, 'handleFormSubmission'])->name('edit_film');
 
 Route::middleware([
     'auth:sanctum',
